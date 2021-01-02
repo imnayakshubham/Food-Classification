@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+    *{
+        /* height: 50%; */
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Titillium Web', sans-serif;
+        
+    }
+    .formcomponent{
+        /* background-color: grey; */
+        /* margin: 250px; */
+        margin-top: 200px;
+        border: 2px solid black;
+        width: 300px;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow:5px 5px gray;
+        /* background: linear-gradient(to left,white 15%, black 15%); */
+
+    }
+    header{
+        margin-left: 5px 0px 0px 0px;
+        color: white;
+    }
+    #user_input{
+        background-color: rgb(196, 196, 196);
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .Predictbtn,.getrecipebtn{
+        /* color:  white; */
+        background-color: gray;
+        width: 265px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        height: 35px;
+        /* opacity: 0.6; */
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .reset{
+        width: 265px;
+        padding: 5px;
+        margin: 5px;
+        border-radius: 5px;
+        height: 35px;
+        background-color: red;
+        font-weight: bolder;
+        cursor: pointer;
+
+    }
+    /* .head,.foot{
+        background: linear-gradient(to right,black 15%, grey 15%);
+
+    } */
+    .foot{
+        text-align: bottom;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+    }
+    body{
+        background: linear-gradient(to right,black 15%, grey 15%);
+
+        background: linear-gradient(to left,black 15%, grey 15%);
+    }
+    
+    .linktext{
+        color: white;
+        text-align: left;
+        text-decoration: none;
+    }

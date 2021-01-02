@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}"
+    >
+</head>
+<body>
+    <center >
+        <header class="head">
+            <h1>
+
+                10 Indian Dishes Classifier
+
+            </h1>
+        </header>
+    <div id="form">
+        <div class="formcomponent">
+
+        
+            <form action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+                <label for="user_input" >
+                    Upload Your Image Here :
+                </label>
+                <br>
+                    <input type="file" name="file" placeholder="Your Image" id="user_input" >
+                <br>
+                
+                    <button class="Predictbtn">Predict</button>
+            </form>
+            <div id="result">
+                <h3>
+                    {{ result }}
+                </h3>
+                
+            </div>
+            <div id="recipe">
+                
+                <a href="https://www.youtube.com/results?search_query={{result}}
+                " target = '_blank' ><button class="getrecipebtn"> Where is my Recipe 🥘 !!!</button></a><br>
+                <a href='/'><input type="reset" value="Reset!" class="reset"></a>
+
+            </div>
+        </div>
+    </div>    
+    </center>
+    
+    <footer class="foot">
+        <div>
+            
+            
+                <h3 class="footercenter">
+                    
+                    <a href="https://github.com/imnayakshubham/10-Indian-Dishes-Classification-using-VGG16" class="linktext"><h3 class="codetext">Code</h3></a>
+                    
+                        
+                </h3>
+        </div>
+    </footer>
+</body>
+</html>
