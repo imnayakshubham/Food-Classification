@@ -56,7 +56,7 @@ def upload():
             prediction="Samosa"
         
         return render_template('index.html',result = prediction)
-    return None
+    return ''
 
 
 if __name__ == '__main__':
