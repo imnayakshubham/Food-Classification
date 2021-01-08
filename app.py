@@ -46,7 +46,6 @@ def upload():
             prediction="Chicken Fried Rice"
         elif prediction==3:
             prediction="Chole Bhature"
-
         elif prediction==4:
             prediction="Dahi Bhalla"
         elif prediction==5:
@@ -59,10 +58,10 @@ def upload():
             prediction="Rasgulla"
         else:
             prediction="Samosa"
-
-            
         
         return render_template('index.html',result = prediction)
+    return None
+
 
 if __name__ == '__main__':
     app.run(debug=True)
