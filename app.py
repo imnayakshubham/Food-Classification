@@ -1,22 +1,18 @@
 import sys
 import os
 import numpy as np
-
 from tensorflow.keras.applications.imagenet_utils import preprocess_input, decode_predictions
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
-
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
 
 MODEL_PATH ='food.h5'
-
 model = load_model(MODEL_PATH)
     
-
-
+    
 @app.route('/')
 def index():
     return render_template('index.html')
